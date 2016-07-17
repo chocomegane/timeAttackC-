@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApplication1.scheduleManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="日程管理" Height="600" Width="800" WindowStartupLocation="CenterOwner">
+    <Window.Resources>
+        <Style x:key="listViewItem" TargetType="ListViewItem">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="0.1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="Height" Value="35"/>
+        </Style>
+        
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="2" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock Width="50" Text="年"/>
+            <TextBlock Width="50" Text="月"/>
+        </StackPanel>
+    </Grid>
+</Window>

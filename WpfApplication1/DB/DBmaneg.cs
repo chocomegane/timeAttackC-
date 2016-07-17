@@ -26,6 +26,7 @@ namespace WpfApplication1.DB
                     Console.WriteLine("value : {0},", dataReader["column_name"]);
                 }
             }
+            //DataAdapterを利用したSELECT
                 using (var conn =new NpgsqlConnection(connString))
                 {
                     conn.Open();
